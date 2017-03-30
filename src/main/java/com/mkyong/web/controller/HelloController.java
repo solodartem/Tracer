@@ -11,7 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HelloController {
 
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = "/auth", method = RequestMethod.POST)
 	@ResponseBody
     public String printWelcome(ModelMap model) {
         System.out.println(model);
