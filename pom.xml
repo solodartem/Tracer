@@ -51,6 +51,9 @@
 <!--					<webApp>
 						<contextPath>/spring3</contextPath>
 					</webApp>-->
+					<httpConnector>
+						<port>80</port>
+					</httpConnector>
 				</configuration>
 			</plugin>
 
