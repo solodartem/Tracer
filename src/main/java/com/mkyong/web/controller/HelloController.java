@@ -11,10 +11,18 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HelloController {
 
+	@RequestMapping(value = "/auth", method = RequestMethod.GET)
+	@ResponseBody
+    public String get(ModelMap model) {
+        System.out.println("Invoke of GET method");
+        return "hello";
+
+	}
+
 	@RequestMapping(value = "/auth", method = RequestMethod.POST)
 	@ResponseBody
-    public String printWelcome(ModelMap model) {
-        System.out.println(model);
+    public String post(ModelMap model) {
+        System.out.println("Invoke of GET method");
         return "hello";
 
 	}
