@@ -14,7 +14,7 @@ public class HelloController {
 	@ResponseBody
     public String get(@RequestParam Map<String,String> allRequestParams) {
         System.out.println("Invoke of GET method with parameters: " + allRequestParams);
-        return "p1=5&p2=&p3=&p4=1&p5=0&p6=1&p7=0&p8=0&token=&CustomData=";
+        return "play=true";
 
 	}
 
